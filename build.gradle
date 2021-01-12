@@ -34,7 +34,7 @@ bintray {
         userOrg = "shedaniel"
         licenses = ["Apache-2.0"]
         version {
-            vcsUrl = "https://github.com/architectury/architectury-annotations.git"
+            vcsUrl = "https://github.com/architectury/architectury-injectables.git"
         }
     }
 }
