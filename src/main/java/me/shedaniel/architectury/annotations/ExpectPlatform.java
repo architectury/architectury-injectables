@@ -27,4 +27,11 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.CLASS)
 @Target(ElementType.METHOD)
 public @interface ExpectPlatform {
+    /**
+     * Marker annotation, implemented automatically on transformed {@code ExpectPlatform} methods.
+     */
+    @Retention(RetentionPolicy.CLASS)
+    @Target(ElementType.METHOD)
+    @interface Transformed {
+    }
 }
