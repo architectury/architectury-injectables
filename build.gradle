@@ -9,6 +9,14 @@ archivesBaseName = rootProject.name
 version = "1.0." + (System.getenv("GITHUB_RUN_NUMBER") == null ? "9999" : System.getenv("GITHUB_RUN_NUMBER"))
 sourceCompatibility = targetCompatibility = 1.8
 
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly "org.jetbrains:annotations:20.1.0"
+}
+
 license {
     include "**/*.java"
     header = project.file("HEADER.txt")
