@@ -18,10 +18,7 @@ package me.shedaniel.architectury.annotations;
 
 import org.intellij.lang.annotations.MagicConstant;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * Marks the annotated method to only be available on specific modding platforms.
@@ -31,6 +28,7 @@ import java.lang.annotation.Target;
  */
 @Retention(RetentionPolicy.CLASS)
 @Target(ElementType.METHOD)
+@Documented
 public @interface PlatformOnly {
     String FABRIC = "fabric";
     String FORGE = "forge";
