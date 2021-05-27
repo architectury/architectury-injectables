@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021 shedaniel
+ * Copyright (c) 2021 architectury
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package me.shedaniel.architectury.annotations;
+package dev.architectury.injectables.annotations;
 
 import org.intellij.lang.annotations.MagicConstant;
 
@@ -32,7 +32,7 @@ import java.lang.annotation.*;
 public @interface PlatformOnly {
     String FABRIC = "fabric";
     String FORGE = "forge";
-
+    
     /**
      * The platforms that the annotated method is available on.
      *
@@ -41,6 +41,6 @@ public @interface PlatformOnly {
      *
      * @return the platforms
      */
-    @MagicConstant(stringValues = { FABRIC, FORGE })
+    @MagicConstant(stringValues = {FABRIC, FORGE})
     String[] value();
 }

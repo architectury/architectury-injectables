@@ -4,7 +4,7 @@ plugins {
     id "maven-publish"
 }
 
-group "me.shedaniel"
+group "dev.architectury"
 archivesBaseName = rootProject.name
 version = "1.0." + (System.getenv("GITHUB_RUN_NUMBER") == null ? "9999" : System.getenv("GITHUB_RUN_NUMBER"))
 sourceCompatibility = targetCompatibility = 1.8
@@ -21,7 +21,7 @@ license {
     include "**/*.java"
     header = project.file("HEADER.txt")
     ext {
-        name = "shedaniel"
+        name = "architectury"
         year = "2021"
     }
 }
