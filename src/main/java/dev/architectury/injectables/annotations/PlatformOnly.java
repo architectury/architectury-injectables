@@ -27,7 +27,7 @@ import java.lang.annotation.*;
  * works on both.
  */
 @Retention(RetentionPolicy.CLASS)
-@Target(ElementType.METHOD)
+@Target({ElementType.METHOD, ElementType.FIELD})
 @Documented
 public @interface PlatformOnly {
     String FABRIC = "fabric";
