@@ -32,6 +32,7 @@ import java.lang.annotation.*;
 public @interface PlatformOnly {
     String FABRIC = "fabric";
     String FORGE = "forge";
+    String QUILT = "quilt";
     
     /**
      * The platforms that the annotated method is available on.
@@ -41,6 +42,6 @@ public @interface PlatformOnly {
      *
      * @return the platforms
      */
-    @MagicConstant(stringValues = {FABRIC, FORGE})
+    @MagicConstant(stringValues = {FABRIC, FORGE, QUILT})
     String[] value();
 }

@@ -20,7 +20,7 @@ public class ArchitecturyTarget {
     private ArchitecturyTarget() {}
     
     /**
-     * Returns the current target identifier, for example, fabric and forge.
+     * Returns the current target identifier, for example, fabric, forge and quilt.
      */
     public static String getCurrentTarget() {
         throw new AssertionError();
